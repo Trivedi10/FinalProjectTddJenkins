@@ -13,6 +13,9 @@ public class NewTest {
 	 @BeforeTest
 	  public void beforeTest() {
 		  System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+		  
+		  DesiredCapabilities cp=DesiredCapabilities.firefox();
+		  
 		  x= new FirefoxDriver();
 		  x.get("http://18.222.29.115:8090/BloggingApplication-0.0.1-SNAPSHOT/");
 		  
